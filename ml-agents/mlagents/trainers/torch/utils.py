@@ -96,7 +96,7 @@ class ModelUtils:
                     vector_size, h_size, unnormalized_inputs, num_layers, normalize
                 )
             )
-        else:
+        elif vector_size > 0:
             vector_encoders.append(
                 VectorEncoder(vector_size, h_size, num_layers, normalize)
             )
